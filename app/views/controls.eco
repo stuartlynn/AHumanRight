@@ -1,0 +1,3 @@
+<div>
+  THIS IS The controlls for <%= @region.name_ascii %>
+</div>

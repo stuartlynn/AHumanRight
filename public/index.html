@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8>
+  <title>App</title>
+  <link rel="stylesheet" href="http://code.leafletjs.com/leaflet-0.3.1/leaflet.css" />
+  <link rel="stylesheet" href="/application.css" type="text/css" charset="utf-8">
+  <script src="http://code.leafletjs.com/leaflet-0.3.1/leaflet.js"></script>
+
+  <script src='wax.leaflet.min.js'></script>
+  <script src='cartodb-leaflet.js'></script>
+
+  <link rel="stylesheet" href="cartodb.css" type="text/css" charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+  <script src="/application.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script type="text/javascript" charset="utf-8">
+    var jQuery  = require("jqueryify");
+    var exports = this;
+    jQuery(function(){
+      var App = require("index");
+      exports.app = new App({el: $("body")});      
+    });
+  </script>
+  
+
+</head>
+<body>
+
+  <div id="omnipresent">
+  <div id="navwrap">
+    <div id="brand">
+      <a href="/">
+        <div id="logo"></div>
+        <div id="wordmark"> </div>
+      </a>
+    </div>
+    <div id="nav">
+      <div id="subNav">
+        <a href="http://rally.org/ahumanright/donate" target="_blank" class="donate red">Donate</a> 
+        <a href="http://twitter.com/ahumanright" class="social"><img src="img/icon_t.png"></a>
+        <a href="http://www.facebook.com/ahumanright" class="social"><img src="img/icon_f.png"></a>
+      </div>
+      <ul id="mainNav">
+        <!-- <a href="/"><li class="blue">Home</li></a> -->
+        <a href="projects.php"><li class="projects">Projects</li></a>
+        <a href="team.php"><li class="people">People</li></a>
+        <a href="http://ahumanright.org/blog" target="_blank"><li class="blog">Blog</li></a>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+   <div id='map'>
+  </div>
+</body>
+</html>
